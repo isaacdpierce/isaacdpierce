@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 // assets //
 import './index.css'
-import stoneTexture from '../assets/images/white-wall.png'
+import backgroundTexture from '../assets/images/sandpaper.png'
 
 // components //
 import Header from '../components/header'
@@ -14,23 +14,20 @@ import Sidebar from '../components/sidebar'
 const StyledSiteWrapper = styled.div`
   position: relative;
   display: grid;
-  grid-template-columns: minmax(200px, 20vw) 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 42px 1fr 60px;
-  min-height: 100vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.98);
+
   color: #f9f9f9;
 `
 
-const StyledBackground = styled.img`
-  min-height: 100vh;
-  width: 100vw;
+const StyledBackground = styled.div`
+  background-image: url(${backgroundTexture});
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  opacity: 0.7;
-  margin-bottom: 0;
-  z-index: -1;
+  opacity: 1;
 `
+
 const StyledPageWrapper = styled.div`
   grid-column: 2 / -1;
   grid-row: 1 / -1;
@@ -49,7 +46,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <StyledSiteWrapper>
-      <StyledBackground src={stoneTexture} alt="" />
+      <StyledBackground />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Sidebar />
       <StyledPageWrapper>{children()}</StyledPageWrapper>

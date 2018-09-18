@@ -1,49 +1,97 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
+import { XelectricKeyframe } from '../assets/animations/keyframes'
 import backgroundTexture from '../assets/images/sandpaper.png'
+import bgVideo from '../assets/videos/video-1.mp4'
 
 const StyledSection = styled.div`
+  height: 100vh;
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  min-height: 100vh;
 `
-
 const StyledWelcome = styled.div`
-  grid-column: 2 / span 6;
-  grid-row: 3 / span 5;
+  grid-column: 2 / span 8;
+  grid-row: 3 / span 9;
+
   border-radius: 3px;
-  overflow: hidden;
-
-  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(${backgroundTexture});
+  background-color: rgba(0, 0, 0, 0.1);
   position: relative;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 3px 3px 2px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 3px 3px 2px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 3px 3px 2px 1px rgba(0, 0, 0, 0.6);
+  border-right: 1px solid #111;
+  border-bottom: 1px solid #111;
 
-  padding: 2rem;
+  position: relative;
   display: grid;
   place-items: center;
-  align-content: center;
+`
+const StyledVideoContainer = styled.div`
+  position: absolute;
 
-  &::before {
-    position: absolute;
-    content: '';
-    background: url(${backgroundTexture});
-    opacity: 0.1;
-    height: 100%;
-    width: 100%;
-  }
+  height: 75%;
+  width: 90%;
+  overflow: hidden;
+  background-color: #0b0b0b;
+  border-left: 6px solid rgba(255, 255, 255, 0.01);
+  border-top: 6px solid rgba(255, 255, 255, 0.01);
+  border-right: 1px solid #111;
+  border-bottom: 1px solid #111;
+  transform: translateY(-24px);
 `
 
-const ContentWrapper = styled.div``
+const StyledVideo = styled.video`
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  object-fit: cover;
+`
+const StyledText = styled.div`
+  z-index: 1;
+`
+const StyledLine = styled.div`
+  box-shadow: inset 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 2rem;
+  left: 5%;
+  width: 90%;
+  height: 10px;
+  /* background: linear-gradient(#0d0d0d, transparent); */
+
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-left: 2px solid rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    background: linear-gradient(to right, transparent, #233f72);
+    display: block;
+    width: 160px;
+    border-radius: 10px;
+    height: 8.1px;
+    animation-delay: 3s;
+    animation: ${XelectricKeyframe} 6s linear infinite 3s backwards;
+  }
+`
 
 const IndexPage = () => (
   <StyledSection>
     <StyledWelcome>
-      <p>I build blazingly fast, beautiful websites for bold people.</p>
-      <p>Let's build something great.</p>
+      <StyledVideoContainer>
+        <StyledVideo autoPlay muted loop id="myVideo">
+          <source src={bgVideo} type="video/mp4" />
+        </StyledVideo>
+      </StyledVideoContainer>
+      <StyledText>
+        <p>I build blazingly fast, beautiful websites for bold people.</p>
+        <p>Let's build something great.</p>
+      </StyledText>
+      <StyledLine />
     </StyledWelcome>
   </StyledSection>
 )

@@ -39,6 +39,7 @@ template {
   display: none;
 }
 a {
+  font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   background-color: transparent;
   color: #333;
   text-decoration: none;

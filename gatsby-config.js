@@ -10,8 +10,7 @@ module.exports = {
     {
       resolve: '@raygesualdo/gatsby-plugin-babel-styled-components',
       options: {
-        ssr: true, // override default
-        displayName: false,
+        ssr: true,
         preprocess: true,
         minify: false,
         transpileTemplateLiterals: false,
@@ -21,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `fira sans:100,300,500,600`,
+          `fira sans:100,300, 400,500,600`,
           `source sans pro:400,700`,
           'cormorant garamond:400,700',
         ],

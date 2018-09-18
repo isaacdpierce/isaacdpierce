@@ -32,7 +32,7 @@ const StyledLink = styled(Link)`
   &::before {
     position: absolute;
     content: '';
-    background: grey;
+    background: #333;
     display: block;
     height: 1px;
     border-radius: 10px;

@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
+import { YelectricKeyframe } from '../assets/animations/keyframes'
+import { StyledEmailBlock } from './email'
 import backgroundTexture from '../assets/images/sandpaper.png'
 import ruler from '../assets/images/ruler.png'
 
@@ -8,55 +11,57 @@ const StyledSidebar = styled.div`
   grid-row: 1 / -1;
   position: sticky;
   top: 0;
+
   height: 100vh;
-  background-color: #0f0f0f;
+  width: 15vw;
+  background: url(${backgroundTexture});
+  background-color: #111;
+  -webkit-box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.6);
+  /* overflow: hidden; */
 
-  /* background-color: ; */
-  -webkit-box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.2);
-
-  &::before {
-    position: absolute;
-    content: '';
-    background: url(${backgroundTexture});
-    opacity: 0.1;
-    height: 100%;
-    width: 100%;
-  }
-`
-const StyledContent = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
-  height: 100%;
-
-  overflow: hidden;
 `
-const StyledRuler = styled.img`
-  grid-column: 1 / span 1;
+const StyledRuler = styled.div`
+  background-image: url(${ruler});
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  grid-column: 1 / 2;
   grid-row: 1 / -1;
-  height: 100%;
-  width: 100%;
+
   opacity: 0.1;
 `
 
-const StyledEmail = styled.a`
-  grid-column: 1 / -1;
-  grid-row: 3 / -1;
-  align-self: end;
-  justify-self: center;
-  padding-bottom: 2rem;
+const StyledLine = styled.div`
+  grid-column: 6 / 6;
+  grid-row: 1 / -1;
+  width: 10px;
+  height: 100vh;
+  background: linear-gradient(to right, #0d0d0d, transparent);
+  border-right: 1px solid #111;
+
+  &::before {
+    content: '';
+    background: linear-gradient(transparent, #233f72);
+    display: block;
+    height: 160px;
+    border-radius: 10px;
+    width: 8.1px;
+    animation: ${YelectricKeyframe} 6s linear infinite;
+  }
 `
 
 const Sidebar = () => (
   <StyledSidebar>
-    <StyledContent>
-      <StyledRuler src={ruler} />
-      <StyledEmail>
-        <a>hello@isaacdpierce.com</a>
-      </StyledEmail>
-    </StyledContent>
+    <StyledRuler />
+    <StyledEmailBlock>
+      <a href="mailto:contactisaacdpierce.com">contact@isaacdpierce.com</a>
+    </StyledEmailBlock>
+    <StyledLine />
   </StyledSidebar>
 )
 
