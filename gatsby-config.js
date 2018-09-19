@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `fira sans:100,300, 400,500,600`,
+          `fira sans:100,300,400,500,600`,
           `source sans pro:400,700`,
           'cormorant garamond:400,700',
         ],

@@ -47,12 +47,14 @@ const StyledVideo = styled.video`
 `
 const StyledText = styled.div`
   word-wrap: break-word;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-shadow: 1px 1px #000;
   text-align: center;
   z-index: 1;
   width: 80%;
   max-width: 32rem;
-  line-height: 1.5
+  line-height: 1.5;
   letter-spacing: 1.3px;
 `
 const StyledLine = styled.div`
@@ -90,8 +92,7 @@ const Welcome = () => (
       </StyledVideo>
     </StyledVideoContainer>
     <StyledText>
-      <p>I build blazingly fast, beautiful websites for inspired people.</p>
-      <p>Let's build something great.</p>
+      <p>I build fast, beautiful websites for inspired people.</p>
     </StyledText>
     <StyledLine />
   </StyledWelcome>

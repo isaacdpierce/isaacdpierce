@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   letter-spacing: 0.5px;
+  
 }
 article,
 aside,
@@ -20,6 +21,9 @@ nav,
 section,
 summary {
   display: block;
+  color: #d1d1d1;
+  letter-spacing: 1.2px;
+  font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
 }
 audio,
 canvas,

@@ -39,11 +39,11 @@ export const electricEmailKeyframe = keyframes`
     
     }
     30% {
-      color: #2062b2;
+      color: #23478c;
       
     }
     39% {
-      color: #2062b2;
+      color: #23478c;
     }
     55% {
       color: #666;
@@ -61,23 +61,23 @@ export const sphereKeyframe = keyframes`
     60% {
       opacity: 0;
     }
-    68% {
-      opacity: .25;
-    }
     70% {
+      opacity: .15;
+    }
+    72% {
       opacity: .5;
       content: 'PUSH'
     }
-    75% {
+    76% {
+      opacity: 1;
+      content: 'PUSH'
+    }
+    80% {
       opacity: 1;
       content: 'PUSH'
     }
     85% {
       opacity: .5;
-      content: 'PUSH'
-    }
-    89% {
-      opacity: .25;
       content: 'PUSH'
     }
     89% {

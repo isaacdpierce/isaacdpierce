@@ -3,7 +3,7 @@ import backgroundTexture from '../assets/images/sandpaper.png'
 import { electricEmailKeyframe } from '../assets/animations/keyframes'
 
 export const StyledEmailBlock = styled.div`
-  position: absolute;
+  position: sticky;
   bottom: 2rem;
   left: 0;
   overflow: hidden;
