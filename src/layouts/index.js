@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { StyledEmailBlock } from '../components/email'
 
 // assets //
 import './index.css'
@@ -49,6 +50,9 @@ const Layout = ({ children, data }) => (
       <StyledBackground />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Sidebar />
+      <StyledEmailBlock>
+        <a href="mailto:contactisaacdpierce.com">contact@isaacdpierce.com</a>
+      </StyledEmailBlock>
       <StyledPageWrapper>{children()}</StyledPageWrapper>
     </StyledSiteWrapper>
   </div>

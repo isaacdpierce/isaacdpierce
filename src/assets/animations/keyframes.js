@@ -5,7 +5,7 @@ export const YelectricKeyframe = keyframes`
     0% {
       transform: translateY(-200px);
     }
-    50% {
+    30% {
       transform: translateY(100vh);
     }
     100% {
@@ -16,11 +16,17 @@ export const XelectricKeyframe = keyframes`
     0% {
       transform: translateX(-200px);
     }
-    50% {
-      transform: translateX(100vh);
+    35% {
+      transform: translateX(-200px);
+    }
+    66% {
+      transform: translateX(60vw);
+    }
+    70% {
+      transform: translateX(60vw);
     }
     100% {
-      transform: translateX(100vh);
+      transform: translateX(60vw);
     }
 `
 
@@ -28,22 +34,80 @@ export const electricEmailKeyframe = keyframes`
     0% {
       color: #666;
     }
-    40% {
+    25% {
       color: #666;
-      filter: brightness(150%);
+    
     }
-    42% {
-      color: #233f72;
-      filter: brightness(200%);
+    30% {
+      color: #2062b2;
+      
     }
-    49% {
-      color: #233f72;
+    39% {
+      color: #2062b2;
     }
-    75% {
+    55% {
       color: #666;
     }
     100% {
       color: #666;
       
+    }
+`
+
+export const sphereKeyframe = keyframes`
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    68% {
+      opacity: .25;
+    }
+    70% {
+      opacity: .5;
+      content: 'PUSH'
+    }
+    75% {
+      opacity: 1;
+      content: 'PUSH'
+    }
+    85% {
+      opacity: .5;
+      content: 'PUSH'
+    }
+    89% {
+      opacity: .25;
+      content: 'PUSH'
+    }
+    89% {
+      opacity: .15;
+      content: 'PUSH'
+    }
+    100% {
+      opacity: 0;
+    }
+`
+
+export const videoKeyframe = keyframes`
+    0% {
+      opacity: 0.1;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    39% {
+      opacity: .3;
+    }
+    63% {
+      opacity: .3;
+     
+    }
+    75% {
+      opacity: .1;
+    }
+   
+    100% {
+      opacity: 0.1;
     }
 `
