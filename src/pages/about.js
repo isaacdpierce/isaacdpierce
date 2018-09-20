@@ -11,16 +11,14 @@ const Title = styled.p`
 const StyledBioText = styled.div`
   grid-column: 2 / -1;
   grid-row: 2 / -1;
-
-  display: grid;
-  place-items: center;
 `
 const StyledList = styled.ul`
   list-style: circle;
 `
 
 const StyledBrickBox = styled.div`
-  margin-top: 10rem;
+  grid-column: span 7 / 10;
+  grid-row: 3 / span 2;
   height: 300px;
   width: 900px;
   overflow-x: hidden;
@@ -82,8 +80,8 @@ class AboutPage extends Component {
       if (!isDown) return // stop the fn from running
       e.preventDefault()
       const x = e.pageX - slider.offsetLeft
-      const walk = x - startX
-      slider.scrollLeft = scrollLeft - walk
+      const drag = x - startX
+      slider.scrollLeft = scrollLeft - drag
     })
   }
 
