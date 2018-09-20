@@ -28,6 +28,7 @@ const StyledBackground = styled.div`
 const StyledPageWrapper = styled.div`
   grid-column: 2 / -1;
   grid-row: 1 / -1;
+  overflow: hidden;
 `
 
 const Layout = ({ children, data }) => (

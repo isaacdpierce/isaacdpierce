@@ -5,6 +5,13 @@ import { PageGrid } from '../layouts/grids'
 import { StyledBrickBox, StyledBrick } from '../components/brick'
 import AboutText from '../components/aboutText'
 
+const AboutPageGrid = styled.section`
+  margin-top: 43px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 1fr 50px;
+`
+
 class AboutPage extends Component {
   componentDidMount() {
     // selects the StyledBrickBox
@@ -41,12 +48,12 @@ class AboutPage extends Component {
 
   render() {
     return (
-      <PageGrid>
+      <AboutPageGrid>
         <StyledBrickBox id="brick-box">
           <StyledBrick />
         </StyledBrickBox>
         <AboutText />
-      </PageGrid>
+      </AboutPageGrid>
     )
   }
 }

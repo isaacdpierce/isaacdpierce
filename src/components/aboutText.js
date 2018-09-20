@@ -7,9 +7,8 @@ const Title = styled.p`
 `
 
 const StyledBioText = styled.div`
-  grid-column: 2 / span 7;
-  grid-row: 2 / span 8;
-  border: 1px solid peru;
+  grid-column: 2 / 9;
+  grid-row: 2 / 3;
 `
 const StyledList = styled.ul`
   list-style: circle;
