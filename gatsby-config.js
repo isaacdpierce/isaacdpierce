@@ -8,7 +8,12 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Fira Sans Condensed: 100,300,700', 'Cormorant Garamond Condensed:300,700', 'Droid Sans Condensed:300,700', 'Droid Serif Condensed:300,700'],
+          families: [
+            'Fira Sans: 100,300,700',
+            'Cormorant Garamond:300,700',
+            'Droid Sans Condensed:300,700',
+            'Droid Serif Condensed:300,700',
+          ],
         },
       },
     },
@@ -28,4 +33,4 @@ module.exports = {
       },
     },
   ],
-};
+}
