@@ -5,27 +5,17 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-styled-components`,
-    },
-    {
-      resolve: '@raygesualdo/gatsby-plugin-babel-styled-components',
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        ssr: true,
-        preprocess: true,
-        minify: false,
-        transpileTemplateLiterals: false,
+        google: {
+          families: ['Fira Sans Condensed: 100,300,700', 'Cormorant Garamond Condensed:300,700', 'Droid Sans Condensed:300,700', 'Droid Serif Condensed:300,700'],
+        },
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `fira sans:100,300,400,500,600`,
-          `source sans pro:400,700`,
-          'cormorant garamond:400,700',
-        ],
-      },
+      resolve: 'gatsby-plugin-styled-components',
     },
+
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
@@ -38,4 +28,4 @@ module.exports = {
       },
     },
   ],
-}
+};

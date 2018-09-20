@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StyledEmailBlock } from '../components/email'
 
 // assets //
 import './index.css'
@@ -18,15 +17,12 @@ const StyledSiteWrapper = styled.div`
   grid-template-columns: auto 1fr;
   grid-template-rows: 42px 1fr 60px;
   background: rgba(0, 0, 0, 0.98);
-
-  color: #f9f9f9;
 `
 
 const StyledBackground = styled.div`
   background-image: url(${backgroundTexture});
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  opacity: 1;
 `
 
 const StyledPageWrapper = styled.div`
@@ -50,9 +46,6 @@ const Layout = ({ children, data }) => (
       <StyledBackground />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Sidebar />
-      <StyledEmailBlock>
-        <a href="mailto:contactisaacdpierce.com">contact@isaacdpierce.com</a>
-      </StyledEmailBlock>
       <StyledPageWrapper>{children()}</StyledPageWrapper>
     </StyledSiteWrapper>
   </div>

@@ -4,7 +4,7 @@ import compass from '../assets/images/compass.png'
 
 const StyledCompass = styled.div`
   grid-column: 6 / 12;
-  grid-row: 5 / 12;
+  grid-row: 4 / 12;
   transform: translate(42%, 6%);
   background-image: url(${compass});
   background-size: contain;

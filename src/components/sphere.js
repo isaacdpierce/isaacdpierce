@@ -5,8 +5,8 @@ export const StyledSphere = styled.section`
   grid-column: span 2 / 12;
   grid-row: 3 / span 2;
   transform: translateY(-1rem);
-  height: 13vw;
-  width: 13vw;
+  height: 10vw;
+  width: 10vw;
   background: rgba(255, 255, 255, 0.05);
 
   border-left: 1px solid rgba(255, 255, 255, 0.05);
@@ -24,15 +24,15 @@ export const StyledSphere = styled.section`
 
 export const StyledCircle = styled.button`
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   outline: none;
   padding: 0;
  
   display: inline-block;
   color:  rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  height: 11vw;
-  width: 11vw;
+  height: 8vw;
+  width: 8vw;
   margin: 0;
   border: 1px solid #111;
   background: radial-gradient(circle at 30% 30%, #2062b2, #000);
@@ -54,8 +54,8 @@ export const StyledCircle = styled.button`
    align-items: center;
     border-radius: inherit;
     margin: 0 auto;
-    height: 10.6vw;
-    width: 10.6vw;
+    height: 7.6vw;
+    width: 7.6vw;
     background: radial-gradient(circle at 30% 30%, #2980e8, #000);
     animation: ${sphereKeyframe} 9s linear infinite;
     transition: filter .2s ease-in-out;

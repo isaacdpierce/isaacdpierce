@@ -3,11 +3,11 @@ import backgroundTexture from '../assets/images/sandpaper.png'
 import { electricEmailKeyframe } from '../assets/animations/keyframes'
 
 export const StyledEmailBlock = styled.div`
-  position: sticky;
-  bottom: 2rem;
-  left: 0;
-  overflow: hidden;
+  grid-column: 1 / -1;
+  grid-row: 6 / -1;
+  align-self: center;
 
+  overflow: hidden;
   background: url(${backgroundTexture});
   background-color: #1b1b1b;
   width: 16.5vw;

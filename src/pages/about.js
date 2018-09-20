@@ -1,68 +1,124 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import { PageGrid } from '../layouts/grids'
 
 const Title = styled.p`
   color: #750000;
-  font-size: 2.6rem;
+  font-size: 1.9rem;
 `
 
-const AboutSectionWrapper = styled.section`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-`
 const StyledBioText = styled.div`
-  grid-column: 2 / span 6;
-  grid-row: 2 / span 19;
+  grid-column: 2 / span 7;
+  grid-row: 2 / span 9;
 
-  display grid:
-  place-items: center;
+  display: grid;
 `
-const StyledCrack = styled.div``
+const StyledList = styled.ul`
+  list-style: circle;
+`
+const StyledBrick = styled.div`
+  grid-column: 4 / -1;
+  grid-row: 2 / 4;
+  background-color: #333;
+  z-index: 99;
+`
 
 const AboutPage = () => (
-  <AboutSectionWrapper>
-    <StyledCrack />
+  <PageGrid>
+    <StyledBrick draggable="true" />
     <StyledBioText>
-      <Title>A wee bit about me.</Title>
       <br />
-      <h3>I love being of service.</h3>
-      <p>
-        When I was 15 I was gifted a hair clipper for Christmas. Shortly after I began cutting a few
-        of my friends hair in my parents basement. The local barber charged $12 at the time. I
-        charged $5. My clientele built fast. Whenever my friends needed a haircut they got 12 bucks
-        from their parents to go to the barber and instead came to give me $5. We all had some extra
-        beer money throughout highschool.
-      </p>
-      <p>
-        I've been in customer service, management and sales ever since. I always intended on going
-        to university but travelling and exciting jobs always ended up taking front seat. At 17 I
-        was assistant manager at a small diner. At 20 was managing a large commission-based
-        furniture store. 22 I was working in Insurance sales. And At 24 I decided I wanted to own my
-        own hair salon. By 28 I did.
-      </p>
-      <p>
-        I spent the next 15 years working within one of the strongest marketting teams in the world,
-        Estee Lauder. I learned the value of stellar customer service, education-based marketting
-        and the power of story telling.
-      </p>
-      <p>
-        As a natural entrepreneur I am self taught in many valuable skills. I've read an indecent
-        amount of books, mostly on business, communication, philosophy, computer science and health.
-        I provide High level creative customer service. I have great written and spoken
-        communication skills. I have many skills related to brand design, product development,
-        Copywriting, sales and marketing, web development.
-      </p>
+      <Title>A wee bit about me.</Title>
+      <StyledList>
+        <li>My mother says I'm handsome.</li>
+        <li>My doctor says I'm healthy.</li>
+        <li>My girlfriend says I'm smart.</li>
+        <li>Who am I to argue?</li>
+      </StyledList>
+      <Title>What can I offer?</Title>
       <p>
         The most important part of me I can offer is my passionate desire to be helpful to others. I
-        am a relentlessly creative and hard working person. I love pushing myself to master new
-        skills. I love working with a great team doing great things. I love writing (especially
-        code), I love my laptop and I love anything that keeps me working and learning online.
+        love working with great people and doing great things. I'm a great listener. I'm
+        relentlessly creative and hard working. I love pushing myself to master new skills. I love
+        writing (especially code) and anything that keeps me creating and learning online.
       </p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
+
+      <Title>How can I help?</Title>
+      <StyledList>
+        <li>10 years ago I started learning front end web development (Wordpress, HTML, CSS)</li>
+        <li>
+          5 years ago started studying more programming (Ruby, Rails, Javascript, SASS, Git, Command
+          Line, DOM api, etc ).
+        </li>
+        <li>
+          2 years ago I started taking it serious (React, Functional Javascript, MongoDB, Node.js)
+        </li>
+
+        <li>
+          I spent 15 years working within one of the strongest marketing teams in the world, Estee
+          Lauder.
+        </li>
+        <li>
+          I learned the value of stellar customer service, education-based marketting and the power
+          of story telling.
+        </li>
+        <li>
+          For 9 years I ran my own hair salon. During that time I also started and sold a second
+          location 300kms away.
+        </li>
+
+        <li>
+          I've read an indecent amount of books, mostly on business, communication, philosophy,
+          computer science and health.
+        </li>
+      </StyledList>
+      <Title>also...</Title>
+      <StyledList>
+        <li>I'm addicted to learning.</li>
+        <li>I've travelled to 9 countries and lived in 9 different cities.</li>
+        <li>
+          I love my laptop, my text editor, Affinity Photo, Udemy,{' '}
+          <a
+            href="https://www.biggerbolderbaking.com/sour-gummy-bears/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            sour gummy bears,{' '}
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=gw9fKuymA0I"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Shigeru Umbayeshi,{' '}
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=-FlxM_0S2lA&t=515s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lo-Fi instrumental hip-hop,{' '}
+          </a>
+          <a
+            href="https://www.spin.com/2018/03/nordic-noir-guide-best-scandinavian-crime-shows/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nordic Noir TV series{' '}
+          </a>
+          and{' '}
+          <a
+            href="https://steam250.com/tag/puzzle-platformer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            puzzle-platform video games.
+          </a>
+        </li>
+      </StyledList>
     </StyledBioText>
-  </AboutSectionWrapper>
+  </PageGrid>
 )
 
 export default AboutPage

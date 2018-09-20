@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 import { YelectricKeyframe } from '../assets/animations/keyframes'
-
+import { StyledEmailBlock } from './email'
 import backgroundTexture from '../assets/images/sandpaper.png'
 import ruler from '../assets/images/ruler.png'
 
@@ -19,11 +19,10 @@ const StyledSidebar = styled.div`
   -webkit-box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.6);
   box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
 `
 const StyledRuler = styled.div`
   background-image: url(${ruler});
@@ -32,7 +31,6 @@ const StyledRuler = styled.div`
 
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-
   opacity: 0.1;
 `
 
@@ -43,6 +41,7 @@ const StyledLine = styled.div`
   height: 100vh;
   background: linear-gradient(to right, #0d0d0d, transparent);
   border-right: 1px solid #111;
+  overflow: hidden;
 
   &::before {
     content: '';
@@ -58,7 +57,9 @@ const StyledLine = styled.div`
 const Sidebar = () => (
   <StyledSidebar>
     <StyledRuler />
-
+    <StyledEmailBlock>
+      <a href="mailto:contactisaacdpierce.com">contact@isaacdpierce.com</a>
+    </StyledEmailBlock>
     <StyledLine />
   </StyledSidebar>
 )

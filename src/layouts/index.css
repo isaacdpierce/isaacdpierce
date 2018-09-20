@@ -2,11 +2,12 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  
 }
 body {
   margin: 0;
   letter-spacing: 0.5px;
-  
+  color: rgba(255,255,255, .6);
 }
 article,
 aside,
@@ -21,7 +22,7 @@ nav,
 section,
 summary {
   display: block;
-  color: #d1d1d1;
+  
   letter-spacing: 1.2px;
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
 }
@@ -45,12 +46,15 @@ template {
 a {
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   background-color: transparent;
-  color: #333;
+  color: #666;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
 }
 a:active,
 a:hover {
+  color: #4d648f;
   outline-width: 0;
 }
 abbr[title] {
@@ -205,7 +209,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  /* color: hsla(0, 0%, 0%, 0.8); */
   font-family: 'Garamond', serif;
   font-weight: normal;
   word-wrap: break-word;

@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const StyledMenu = styled.div`
-  width: 33%;
+  width: 21%;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
   font-size: 0.8rem;
@@ -64,19 +64,13 @@ const Menu = () => (
   <StyledMenu>
     <ul>
       <li>
-        <StyledLink to="/">home</StyledLink>
+        <StyledLink to="/about">about</StyledLink>
       </li>
       <li>
-        <StyledLink to="/about/">about</StyledLink>
+        <StyledLink to="/work">work</StyledLink>
       </li>
       <li>
-        <StyledLink to="/services/">services</StyledLink>
-      </li>
-      <li>
-        <StyledLink to="/portfolio/">portfolio</StyledLink>
-      </li>
-      <li>
-        <StyledLink to="/contact/">contact</StyledLink>
+        <StyledLink to="/contact">contact</StyledLink>
       </li>
     </ul>
   </StyledMenu>
