@@ -1,5 +1,5 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import { keyframes } from 'styled-components'
+import { RandomArbValue, randomIntValue } from '../helpers/math'
 
 export const YelectricKeyframe = keyframes`
     0% {
@@ -149,4 +149,61 @@ export const videoKeyframe = keyframes`
     100% {
       opacity: 0.1;
     }
+`
+
+export const randomMovement = keyframes`
+  0% {
+    transform: 
+    translate(${randomIntValue(-50, 50)}px, ${randomIntValue(-20, 20)}px)
+    scale(1);
+    opacity: 1;
+  }
+  15% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  } 
+  25% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  } 
+  35% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  } 
+  50% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  } 
+  65% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  } 
+  75% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  } 
+  90% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  } 
+  100% {
+    transform: 
+    translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
+    scale(${RandomArbValue(0.3, 1)});
+    opacity:${RandomArbValue(0.3, 1)};
+  }
 `

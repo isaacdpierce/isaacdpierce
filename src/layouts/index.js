@@ -30,7 +30,7 @@ const StyledPageWrapper = styled.div`
   grid-column: 2 / -1;
   grid-row: 1 / -1;
   overflow: hidden;
-  border-bottom: 3px solid #3e3e3e;
+  border-bottom: 3px solid #1e1e1e;
 `
 
 const Layout = ({ children, data }) => (
