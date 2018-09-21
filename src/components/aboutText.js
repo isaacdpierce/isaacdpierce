@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Title = styled.p`
-  color: #750000;
+  color: #513d07;
   font-size: 1.9rem;
 `
 
@@ -17,6 +17,7 @@ const StyledList = styled.ul`
 const AboutText = () => (
   <StyledBioText>
     <br />
+
     <Title>A wee bit about me.</Title>
     <StyledList>
       <li>My mother says I'm handsome.</li>
@@ -28,11 +29,12 @@ const AboutText = () => (
     <p>
       The most important part of me I can offer is my passionate desire to be helpful to others. I
       love working with great people and doing great things. I'm a great listener. I'm relentlessly
-      creative and hard working. I love pushing myself to master new skills. I love writing
-      (especially code) and anything that keeps me creating and learning online.
+      creative, curious and hard working. I love pushing myself to master new skills. I love writing
+      (especially code) and anything that keeps me creating and learning online. I also have a
+      pretty cheeky sense of humour.
     </p>
 
-    <Title>How can I help?</Title>
+    <Title>What can I do?</Title>
     <StyledList>
       <li>10 years ago I started learning front end web development (Wordpress, HTML, CSS)</li>
       <li>
@@ -66,7 +68,7 @@ const AboutText = () => (
       <li>I'm addicted to learning.</li>
       <li>I've travelled to 9 countries and lived in 9 different cities.</li>
       <li>
-        I love my laptop, my text editor, Affinity Photo, Udemy,{' '}
+        I love my laptop, my text editor, Affinity Photo, Danner Boots,{' '}
         <a
           href="https://www.biggerbolderbaking.com/sour-gummy-bears/"
           target="_blank"

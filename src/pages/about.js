@@ -2,7 +2,15 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { PageGrid } from '../layouts/grids'
-import { StyledBrickBox, StyledBrick } from '../components/brick'
+import {
+  StyledBrickBox,
+  StyledBrick,
+  StyledLine,
+  StyledLine2,
+  BrickText,
+  StyledScrollTag,
+} from '../components/brick'
+
 import AboutText from '../components/aboutText'
 
 const AboutPageGrid = styled.section`
@@ -50,7 +58,12 @@ class AboutPage extends Component {
     return (
       <AboutPageGrid>
         <StyledBrickBox id="brick-box">
-          <StyledBrick />
+          <StyledBrick>
+            <StyledScrollTag>Scroll >></StyledScrollTag>
+            <BrickText />
+          </StyledBrick>
+          <StyledLine />
+          <StyledLine2 />
         </StyledBrickBox>
         <AboutText />
       </AboutPageGrid>

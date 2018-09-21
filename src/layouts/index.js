@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Footer from '../components/footer'
 
 // assets //
 import './index.css'
@@ -15,7 +16,7 @@ const StyledSiteWrapper = styled.div`
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: 42px 1fr;
+  grid-template-rows: 42px 1fr 50vh;
   background: rgba(0, 0, 0, 0.98);
 `
 
@@ -29,6 +30,7 @@ const StyledPageWrapper = styled.div`
   grid-column: 2 / -1;
   grid-row: 1 / -1;
   overflow: hidden;
+  border-bottom: 3px solid #3e3e3e;
 `
 
 const Layout = ({ children, data }) => (
@@ -48,6 +50,7 @@ const Layout = ({ children, data }) => (
       <Header siteTitle={data.site.siteMetadata.title} />
       <Sidebar />
       <StyledPageWrapper>{children()}</StyledPageWrapper>
+      <Footer />
     </StyledSiteWrapper>
   </div>
 )

@@ -64,7 +64,6 @@ const StyledLine = styled.div`
   left: 5%;
   width: 90%;
   height: 10px;
-  /* background: linear-gradient(#0d0d0d, transparent); */
 
   border-top: 2px solid rgba(0, 0, 0, 0.5);
   border-left: 2px solid rgba(0, 0, 0, 0.4);
@@ -79,7 +78,6 @@ const StyledLine = styled.div`
     width: 160px;
     border-radius: 10px;
     height: 8.1px;
-    animation-delay: 3s;
     animation: ${XelectricKeyframe} 9s linear infinite backwards;
   }
 `

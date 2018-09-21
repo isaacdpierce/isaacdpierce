@@ -29,6 +29,45 @@ export const XelectricKeyframe = keyframes`
       transform: translateX(60vw);
     }
 `
+export const XelectricKeyframeNeg = keyframes`
+    0% {
+      transform: translateX(40vw);
+    }
+    35% {
+      transform: translateX(40vw);
+    }
+    69% {
+      transform: translateX(40vw);
+    }
+    95% {
+      transform: translateX(-60vw);
+    }
+    100% {
+      transform: translateX(-60vw);
+    }
+`
+
+export const electricPullKeyframe = keyframes`
+  0% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+
+`
 
 export const electricEmailKeyframe = keyframes`
     0% {

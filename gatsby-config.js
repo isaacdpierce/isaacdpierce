@@ -13,6 +13,8 @@ module.exports = {
             'Cormorant Garamond:300,700',
             'Droid Sans Condensed:300,700',
             'Droid Serif Condensed:300,700',
+            'Handlee',
+            'Allerta Stencil',
           ],
         },
       },
