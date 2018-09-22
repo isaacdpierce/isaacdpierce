@@ -1,11 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Title = styled.p`
-  color: #513d07;
-  font-size: 1.9rem;
-`
-
 const StyledBioText = styled.div`
   grid-column: 2 / 9;
   grid-row: 2 / 3;
@@ -18,14 +13,14 @@ const AboutText = () => (
   <StyledBioText>
     <br />
 
-    <Title>A wee bit about me.</Title>
+    <h3>A wee bit about me.</h3>
     <StyledList>
       <li>My mother says I'm handsome.</li>
       <li>My doctor says I'm healthy.</li>
       <li>My girlfriend says I'm smart.</li>
       <li>Who am I to argue?</li>
     </StyledList>
-    <Title>What can I offer?</Title>
+    <h3>What can I offer?</h3>
     <p>
       The most important part of me I can offer is my passionate desire to be helpful to others. I
       love working with great people and doing great things. I'm a great listener. I'm relentlessly
@@ -34,7 +29,7 @@ const AboutText = () => (
       pretty cheeky sense of humour.
     </p>
 
-    <Title>What can I do?</Title>
+    <h3>What can I do?</h3>
     <StyledList>
       <li>10 years ago I started learning front end web development (Wordpress, HTML, CSS)</li>
       <li>
@@ -63,7 +58,7 @@ const AboutText = () => (
         computer science and health.
       </li>
     </StyledList>
-    <Title>also...</Title>
+    <h3>also...</h3>
     <StyledList>
       <li>I'm addicted to learning.</li>
       <li>I've travelled to 9 countries and lived in 9 different cities.</li>

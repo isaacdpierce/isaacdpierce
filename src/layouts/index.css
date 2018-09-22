@@ -47,7 +47,7 @@ template {
 a {
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   background-color: transparent;
-  color: #666;
+  color: #9a8553;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
   cursor: pointer;
@@ -55,7 +55,7 @@ a {
 }
 a:active,
 a:hover {
-  color: #4d648f;
+  color: #bca77a;
   outline-width: 0;
 }
 abbr[title] {
@@ -241,7 +241,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #513d07;
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -249,6 +249,7 @@ h1 {
   line-height: 1.1;
 }
 h2 {
+  
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -257,7 +258,7 @@ h2 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #513d07;
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -274,7 +275,7 @@ h3 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #513d07;
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -283,6 +284,7 @@ h3 {
   line-height: 1.1;
 }
 h4 {
+  
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -291,7 +293,7 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #513d07;
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -299,6 +301,7 @@ h4 {
   line-height: 1.1;
 }
 h5 {
+  
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -307,7 +310,7 @@ h5 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #513d07;
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -315,6 +318,7 @@ h5 {
   line-height: 1.1;
 }
 h6 {
+  
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -323,7 +327,7 @@ h6 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #513d07;
   font-family: Fira Sans, Droid Sans, Roboto, Oxygen, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -341,6 +345,7 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
+  list-style: circle;
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;

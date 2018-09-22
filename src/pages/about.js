@@ -13,13 +13,6 @@ import {
 
 import AboutText from '../components/aboutText'
 
-const AboutPageGrid = styled.section`
-  margin-top: 43px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px 1fr 50px;
-`
-
 class AboutPage extends Component {
   componentDidMount() {
     // selects the StyledBrickBox
@@ -56,7 +49,7 @@ class AboutPage extends Component {
 
   render() {
     return (
-      <AboutPageGrid>
+      <PageGrid>
         <StyledBrickBox id="brick-box">
           <StyledBrick>
             <StyledScrollTag>Scroll >></StyledScrollTag>
@@ -66,7 +59,7 @@ class AboutPage extends Component {
           <StyledLine2 />
         </StyledBrickBox>
         <AboutText />
-      </AboutPageGrid>
+      </PageGrid>
     )
   }
 }

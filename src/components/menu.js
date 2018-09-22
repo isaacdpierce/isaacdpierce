@@ -30,7 +30,6 @@ const StyledLink = styled(Link)`
   color: #555;
 
   &::before {
-    position: absolute;
     content: '';
     background: #333;
     display: block;
@@ -42,7 +41,7 @@ const StyledLink = styled(Link)`
     left: 0;
     right: 0;
     margin: auto;
-    transition: all 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
   }
 
   &:hover {
@@ -51,7 +50,6 @@ const StyledLink = styled(Link)`
     -webkit-text-fill-color: transparent;
 
     &::before {
-      background: white;
       box-shadow: 0px 0px 129px 3px rgba(255, 255, 255, 0.6),
         0px 0px 99px 1px rgba(255, 255, 255, 0.9), 0px 0px 99px 3px rgba(255, 255, 255, 0.9);
 

@@ -151,6 +151,94 @@ export const videoKeyframe = keyframes`
     }
 `
 
+export const randomMovementB = x => keyframes`
+
+0% {
+  transform: translate(${x}px, ${randomIntValue(250, -250)}px) 
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity: ${RandomArbValue(0.2, 1)};
+}
+5% {
+  opacity: ${RandomArbValue(0.2, 1)};
+}
+
+
+10% {
+  transform: 
+  translate(${x + randomIntValue(-300, 300)}px, ${randomIntValue(150, -150)}px)
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity:${RandomArbValue(0.1, 1)};
+} 
+25% {
+  transform: 
+  translate(${x + randomIntValue(-300, 300)}px, ${randomIntValue(150, -150)}px)
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity:${RandomArbValue(0.1, 1)};
+} 
+
+35% {
+  opacity: ${RandomArbValue(0.1, 1)};
+}
+40% {
+  transform: 
+  translate(${x + randomIntValue(-300, 300)}px, ${randomIntValue(250, -250)}px)
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity:${RandomArbValue(0.2, 1)};
+} 
+45% {
+  opacity: ${RandomArbValue(0.2, 1)};
+}
+50% {
+  transform: 
+  translate(${x + randomIntValue(-600, 600)}px, ${randomIntValue(150, -150)}px)
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity:${RandomArbValue(0.1, 1)};
+} 
+55% {
+  opacity: ${RandomArbValue(0.1, 1)};
+  scale(${RandomArbValue(0.2, 1.3)});
+}
+57% {
+  
+  opacity: ${RandomArbValue(0.1, 1)};
+  scale(${RandomArbValue(0.2, 1.3)});
+}
+
+64% {
+  opacity: ${RandomArbValue(0.2, 1)};
+}
+65% {
+  opacity: ${RandomArbValue(0.2, 1)};
+}
+70% {
+  transform: 
+  translate(${x + randomIntValue(-600, 600)}px, ${randomIntValue(250, -250)}px)
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity:${RandomArbValue(0.2, 1)};
+} 
+75% {
+  opacity: ${RandomArbValue(0.2, 1)};
+}
+79% {
+  opacity: ${RandomArbValue(0.2, 1)};
+}
+80% {
+  transform: 
+  translate(${x + randomIntValue(-300, 300)}px, ${randomIntValue(100, -100)}px)
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity:${RandomArbValue(0.2, 1)};
+} 
+90% {
+  opacity:${RandomArbValue(0.2, 1)};
+} 
+100% {
+  transform: 
+  translate(${randomIntValue(-600, 600)}px, ${x + randomIntValue(250, -250)}px)
+  scale(${RandomArbValue(0.2, 1.3)});
+  opacity:1;
+} 
+`
+
 export const randomMovement = keyframes`
   0% {
     transform: 
@@ -194,7 +282,7 @@ export const randomMovement = keyframes`
     scale(${RandomArbValue(0.3, 1)});
     opacity:${RandomArbValue(0.3, 1)};
   } 
-  90% {
+  % {
     transform: 
     translate(${randomIntValue(-900, 900)}px, ${randomIntValue(-190, 190)}px)
     scale(${RandomArbValue(0.3, 1)});

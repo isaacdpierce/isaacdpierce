@@ -18,6 +18,7 @@ const StyledLogoLink = styled(Link)`
   transition: filter 0.3s ease-in-out;
   &:hover {
     filter: brightness(125%);
+    color: #999;
   }
 `
 const StyledLogoImage = styled.img`
